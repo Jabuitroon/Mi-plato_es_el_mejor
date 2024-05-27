@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Mi Plato es el mejor</title>
+  <link rel="stylesheet" href="../Platostyle/Platostyle.css">
+	<link rel="stylesheet" href="PlatostyleContacto.css">
+  <link rel="shortcut icon" href="../Images/851.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <style>
+    html{
+	scroll-behavior: smooth;
+}
+  </style>
+</head>
+<body>
+  <header class ="header">
+    <nav class="header_nav navbar-expand-lg sticky-top">
+      <div class="header_nav container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#como-llegar">Como llegar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu-dia">Menú del día</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galería</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Idiomas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Inglés</a></li>
+                <li><a class="dropdown-item" href="#">Español</a></li>
+                <li><a class="dropdown-item" href="#">Euskera</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	<div class="header_title">
+		<img class="header_title header_title--logo" src="../Img/Logo.png" alt="Logo del restaurante de comida bbq Mi Plato es el mejor">
+    <h1 class="header_title header_title--title">Mi Plato Es El Mejor</h1>
+	</div>
+	<div class="header_float">
+		<a href=""><img src="../Img/reservar1.png"/></a>
+	</div>
+</header>
+<main  in class="main">
+	<aside class="main_aside">
+    <!-- Usar em para decirle al document html que hago enfasis en este tema o palabra en especial con em -->
+    <h3>Contacto <br><em>3135904539</em></h3>
+    <!-- Combinación de selctores -->
+    <ul class="list-group">
+      <a href="/Deldia/MPEEMFotos.html" class="list-group-item list-group-item-action list-group-item-danger">
+        Menú del día
+      </a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+        Menú especial fin de semana
+      </a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+        Platos combinados
+      </a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+        Menú de comunión
+      </a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+        Varios
+      </a>
+      <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+        Carta de vinos
+      </a>
+    </ul>
+    <hr>
+    <h3>Redes Sociales</h3>
+    <div class="redes-sociales">
+      <!-- .svg a secas -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </svg>
+      <p class="redes-font">Mi Plato Es El Mejor</p>
+    </div>
+    <div class="redes-sociales">
+      <!-- con bootstrap icons -->
+      <i class="bi bi-twitter-x"></i>
+      <p class="redes-font">@Mi Plato</p>
+    </div>
+    <div class="redes-sociales">
+      <!-- agregar .svg como archivo externo-->
+      <img src="../Img/logo.svg" >
+      <p class="redes-font">InstaMiPlato</p>
+    </div>
+	</aside>
+
+    <section id="section-1" class="section">
+      <form class="form" action="">
+        <legend class="form-header">Contacta Con Nosotros</legend>
+          <input type="text" class="form-input" placeholder="Nombre">
+          <input type="password" class="form-input" placeholder="Dirección">
+          <input type="email" class="form-input" placeholder="Correo Electrónico">
+          <label for="mensaje" class="form-label">Mensaje:</label>
+          <textarea name="mensaje" class="form-textarea" cols="30" rows="10"placeholder="Escriba su mensaje"></textarea>
+          <button class="btn-submit">Enviar</button>
+      </form>
+    </section>
+    <section id="como-llegar" class="section">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum voluptates eum cupiditate harum expedita nam, eius hic dolor, nisi repellat magni nemo saepe cumque enim, quae alias ratione pariatur ipsum! Corrupti earum mollitia quia voluptatum sapiente dolorum temporibus, aliquam fuga dolore quasi tempora vel, quibusdam adipisci. Exercitationem quo totam ad incidunt quisquam necessitatibus quasi debitis, maiores, nemo tempora dolores atque. Velit consectetur corrupti iure optio labore ipsam aliquam mollitia dolorem blanditiis reprehenderit. Mollitia, quas quis assumenda repudiandae cumque eveniet aliquam inventore est impedit! Vero error ipsam, fuga itaque blanditiis ratione eaque eum accusamus labore id quae inventore enim sit aperiam cupiditate, odit quos qui velit facere laboriosam iusto nesciunt! Officia esse nulla animi blanditiis porro nostrum facere ab laudantium repellendus natus, cupiditate optio quidem sequi ducimus? Reprehenderit temporibus velit eaque earum facere laboriosam debitis suscipit assumenda quam vero hic voluptates cupiditate id vitae ea possimus atque, quaerat labore? Odio reiciendis recusandae laborum tempora voluptas ad porro! Amet assumenda minima aperiam inventore quod tenetur excepturi quos maiores commodi quisquam perferendis, tempore, perspiciatis consectetur? Magnam distinctio quis maxime voluptates. Neque eos corporis voluptatibus sit laboriosam, autem beatae temporibus magnam architecto sequi suscipit voluptates id, quasi dolor ipsam quia, dolores exercitationem eveniet.</p>
+    </section>
+    <section id="menu-dia" class="section">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum voluptates eum cupiditate harum expedita nam, eius hic dolor, nisi repellat magni nemo saepe cumque enim, quae alias ratione pariatur ipsum! Corrupti earum mollitia quia voluptatum sapiente dolorum temporibus, aliquam fuga dolore quasi tempora vel, quibusdam adipisci. Exercitationem quo totam ad incidunt quisquam necessitatibus quasi debitis, maiores, nemo tempora dolores atque. Velit consectetur corrupti iure optio labore ipsam aliquam mollitia dolorem blanditiis reprehenderit. Mollitia, quas quis assumenda repudiandae cumque eveniet aliquam inventore est impedit! Vero error ipsam, fuga itaque blanditiis ratione eaque eum accusamus labore id quae inventore enim sit aperiam cupiditate, odit quos qui velit facere laboriosam iusto nesciunt! Officia esse nulla animi blanditiis porro nostrum facere ab laudantium repellendus natus, cupiditate optio quidem sequi ducimus? Reprehenderit temporibus velit eaque earum facere laboriosam debitis suscipit assumenda quam vero hic voluptates cupiditate id vitae ea possimus atque, quaerat labore? Odio reiciendis recusandae laborum tempora voluptas ad porro! Amet assumenda minima aperiam inventore quod tenetur excepturi quos maiores commodi quisquam perferendis, tempore, perspiciatis consectetur? Magnam distinctio quis maxime voluptates. Neque eos corporis voluptatibus sit laboriosam, autem beatae temporibus magnam architecto sequi suscipit voluptates id, quasi dolor ipsam quia, dolores exercitationem eveniet.</p>
+    </section>
+    <section id="galeria" class="section">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum voluptates eum cupiditate harum expedita nam, eius hic dolor, nisi repellat magni nemo saepe cumque enim, quae alias ratione pariatur ipsum! Corrupti earum mollitia quia voluptatum sapiente dolorum temporibus, aliquam fuga dolore quasi tempora vel, quibusdam adipisci. Exercitationem quo totam ad incidunt quisquam necessitatibus quasi debitis, maiores, nemo tempora dolores atque. Velit consectetur corrupti iure optio labore ipsam aliquam mollitia dolorem blanditiis reprehenderit. Mollitia, quas quis assumenda repudiandae cumque eveniet aliquam inventore est impedit! Vero error ipsam, fuga itaque blanditiis ratione eaque eum accusamus labore id quae inventore enim sit aperiam cupiditate, odit quos qui velit facere laboriosam iusto nesciunt! Officia esse nulla animi blanditiis porro nostrum facere ab laudantium repellendus natus, cupiditate optio quidem sequi ducimus? Reprehenderit temporibus velit eaque earum facere laboriosam debitis suscipit assumenda quam vero hic voluptates cupiditate id vitae ea possimus atque, quaerat labore? Odio reiciendis recusandae laborum tempora voluptas ad porro! Amet assumenda minima aperiam inventore quod tenetur excepturi quos maiores commodi quisquam perferendis, tempore, perspiciatis consectetur? Magnam distinctio quis maxime voluptates. Neque eos corporis voluptatibus sit laboriosam, autem beatae temporibus magnam architecto sequi suscipit voluptates id, quasi dolor ipsam quia, dolores exercitationem eveniet.</p>
+    </section>
+  </div>
+<footer id="PanelP">
+	<small>Mi plato es el mejor &copy; 2023</small>
+</footer>
+</body>
+</html>

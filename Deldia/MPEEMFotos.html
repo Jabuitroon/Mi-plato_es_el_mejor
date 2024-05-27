@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+	<title>Mi Plato es el mejor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<!-- Metadatos proporciona información sobre el documento en el que estamos trabajando -->
+	<meta name="description" content="Restaurantes PioPio con su receta única y deliciosa de 45 años es la mejor opción para comer pollo en popayan, disfruta de otros platos a la carta al mejor precio. Has tu pedido a domicilio en popayan, Es una buena alternativa de asaderos en popayan, almuerzos en popayan, restaurantes en popayan, piopio, PioPio, Pio Pio, piopio.com.co, restaurantes a domicilio en popayan">
+	<meta name="keywords" content="Pollo Asado, Restaurante en Popayán, desayunos">
+	<style>
+		table, td, th{
+			border: 1px solid black;
+		}
+		*{
+			margin: 0px;
+		}
+
+		.main{
+			background-color: blueviolet;
+			border: 1px solid transparent;
+		}
+		.footer{
+			background-color: blue;
+		}
+
+		picture>img{
+			max-width: 1080px;
+			object-fit: cover;
+		}
+		
+		/* Agregando una imagen de fondo y un degradado */
+		.card{
+			background-image: linear-gradient(rgba(255, 0, 0, 0.486),rgba(0, 0, 255, 0.322)), url('Img/img8.png');
+			margin: 40px auto;
+			width: 50vw;
+			height: 60vw;
+
+			border-radius: 10px;
+			/* valores en X y Y, difuminado, centrar desde difuminado , color */
+			box-shadow: 30px 30px 20px -1rem blueviolet;
+			padding: 1rem;
+			color: white;
+		}
+		
+		.card_img{
+			border-radius: inherit;
+			width: 100%;
+		}
+
+		.card_title{
+			text-align: center;
+			margin: 1rem 0px .5rem;
+		}
+
+		.card_act{
+			display: block;
+			text-align: center;
+			padding: 1rem 3rem;
+			margin: 10px auto;
+			font-size: 30px;
+			border-radius: 30px;
+			background-color: rgb(180, 129, 228);
+			color: blueviolet;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<!-- Para darle un nombre y que se muestre sobre la tabla -->
+		<caption>Lista de platos disponibles!</caption>
+		<!-- Table Row -->
+		<tr>
+			<!-- Table head -->
+			<th>id</th>
+			<th>nombre del plato</th>
+			<th>horario</th>
+		</tr>
+		<tr>
+			<td>1234</td>
+			<td>Arroz con tomate</td>
+			<td>6:am</td>
+		</tr>
+		<tr>
+			<td>1234</td>
+			<td>Arroz con tomate</td>
+			<td>6:am</td>
+		</tr>
+		<tr>
+			<td>1234</td>
+			<td>Arroz con tomate</td>
+			<td>6:am</td>
+		</tr>
+
+	</table>
+	<!-- Picture un contenedor de imagenes que mostrará dependiendo del vp -->
+		<picture>
+			<source srcset="./Img/img6.png" media="(min-width: 900px)">
+			<source srcset="./Img/img7.jpg" media="(min-width: 500px)">
+			<img src="Img/img4.png" alt="" srcset="">
+		</picture>
+	<article class="card">
+		<img class="card_img" src="https://media.istockphoto.com/id/1451456915/es/foto/desarrolladora-independiente-de-codificaci%C3%B3n-y-programaci%C3%B3n-codificaci%C3%B3n-en-dos-con-pantallas.jpg?s=1024x1024&w=is&k=20&c=sz7LKVThvBQy5B5J6tr2DiJIFy47XOXc_5UjVVpSfzo=" alt="" srcset="">
+		<h2 class="card_title">Entra a mi restaurante y disfruta!</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sunt ipsum accusamus repudiandae maiores dicta similique reiciendis quas alias aspernatur rerum voluptas eum magni molestiae, voluptatum obcaecati incidunt vel nesciunt fugit facilis atque numquam consequatur. Sint eos, placeat odit incidunt aliquam excepturi voluptatem ex minima, omnis, molestias tenetur non minus.</p>
+		<button class="card_act">Start!</button>
+	</article>
+<main class="main">
+	<h1 class="main-title">Contenido</h1>
+</main>
+
+<footer class="footer">
+	<h2 class="footer-title">Contenido 2</h2>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+*{
+	font-family: 'Handlee', cursive;
+}
+
+/*Imagen de fondo fija*/
+body{
+	background: url(../Img/Fondo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/*Tamaño y fondo color oscuro header*/
+.header{
+	display: flex;
+	flex-direction: column;
+	background-color: #641E16;
+	height: 225px;
+}
+
+/*Tamaño logo principal color negro png*/
+.header_title{
+	display: flex;
+	align-items: center;
+}
+.header_title--logo{
+	position: absolute;
+	object-fit: contain;
+	margin-top: 2.5%;
+	width: 200px;
+}
+
+/*Tamaño y fondo color claro de titulo */
+.header_title--title{
+	margin-top: 2.5%;
+	padding-left: 200px;
+	width: 90%;
+	font-size: 6em;
+	border-top-right-radius: 60px;
+	border-bottom-right-radius: 60px;
+	font-family: 'Great Vibes', cursive;
+	font-weight: bold;
+	background: #E74C3C;
+	color: #4C0707;
+}
+
+/*Boton flotante reserva*/
+.header_float{
+    /* display:scroll; */
+	position:fixed;
+	z-index: 50;
+	top: 15%;
+	right:0px;
+}
+
+/*Nav horizontal*/
+.container-fluid{
+	background-color: #b12718;
+}
+
+/*Nav horizontal Botones*/
+.header_nav li{
+	font: 15px verdana, sans-serif;
+	color: black;
+	transition: background-color .3s;
+	padding: 5px;
+}
+
+.header_nav li:hover{
+	background-color: #E74C3C;
+}
+
+/* Main */
+.main{
+	display: flex;
+}
+
+/* aside */
+.main_aside{
+	display: flex;
+	flex-direction: column;
+	background: #CB4335;
+	width: 200px;
+}
+
+/*número telefonico*/
+.main_aside > h3{
+	text-align: center;
+	margin: 0%;
+	font-size: 25px;
+	color: #4C0707;
+	padding: 10px 5px;
+}
+
+/*Panel vertical izquiero-redessociales*/
+.aside_redes{
+	padding: 0%;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.aside_redes>li{
+	display: flex;
+	align-items: center;
+	margin-left: 5px;
+	gap: 10px;
+}
+
+/* Al usar los iconos de Bt los estilos se personalizan tratandolo cono un font */
+.bi-twitter-x{
+font-size: 35px;
+height: 45px;
+}
+
+.redes-font{
+	margin: 0px;
+	font-size: 15px;
+}
+
+/* visor */
+.Section{
+	margin-top: 10px;
+    display: flex;
+    width: 1080px;
+    height: 535px;
+}
+
+section img{
+    width: 0px;
+    /* Debtro de la caja flexible tiene que ocupar el espacio que pueda */
+    flex-grow: 1;
+    object-fit: cover;
+    transition: .5s ease;
+    opacity: .8;
+}
+
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*Footer y derechos autor*/
+#PanelP{
+	background: #B03A2E;
+	width: 100%;
+	text-align: center;
+	float: left;
+}

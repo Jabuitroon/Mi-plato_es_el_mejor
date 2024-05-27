@@ -1,0 +1,183 @@
+body{
+	background: url(../Images/Fondo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+h1{
+	font-family: 'Great Vibes', cursive;
+}
+*{
+	font-family: 'Handlee', cursive;
+}
+.cabecera{
+	margin-top: 0px;
+	background-color: #641E16;
+	height: 190px;
+	width: 100%;
+	position: relative;
+}
+h1.tit{
+	background: #E74C3C ;
+	position: absolute;
+	text-align: right;
+	margin-top: 2%;
+	color: #4C0707;
+	width: 86%;
+	font-family: 'Great Vibes', cursive;
+	font-size: 95px;
+	padding: 10px;
+	padding-right: 50px;
+	border-top-right-radius: 60px;
+	border-bottom-right-radius: 60px;
+	border-style: double;
+}
+.cabecera .Logo img{
+	height: 200px;
+	width: 200px;	
+	position: absolute;
+	top: -0.5%;
+}
+#panelh{
+	background-color: #B03A2E;
+	width: 100%;
+	height: 40px;
+	float: left;
+}
+#panelh ul{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 40px;
+	margin-left: 15px;
+}
+#panelh li{
+	display: inline-block;
+	font: 15px verdana, sans-serif;
+	background-color: #641E16;
+	margin: 10px;
+	padding-left: 45px;
+	padding-right: 45px;
+	color: black;
+	transition: background-color .3s;
+	color: #E74C3C;
+}
+#panelh li:hover {
+	background-color: #E74C3C;
+	color: black;
+}
+#panelreserva{
+	margin-top: 10px;
+	background: #CB4335;
+	width: 200px;
+	height: 80px;
+	float: left;
+	color: #4C0707;
+	position: relative;
+}
+#ubicacion{
+	position: absolute;
+}
+#panelmenu{
+	background: #B03A2E;
+	width: 200px;
+	height: 330px;
+	margin-top: 90px;
+	margin-left: -200px;
+	float: left;
+}
+#panelmenu li{
+	margin-top: 25px;
+	margin-left: -15px;
+	color: #4C0707;
+}
+a{
+	text-decoration: none;
+}
+#redes{
+	background: #CB4335;
+	width: 200px;
+	height: 200px;
+	margin-top: 430px;
+	margin-left: -200px;
+	position: relative;
+	float: left;
+}
+h5.face{
+	top: 75px;
+	left: 50px;
+	position: absolute;
+}
+h5.tw{
+	top: 110px;
+	left: 50px;
+	position: absolute;
+}
+h5.insta{
+	top: 150px;
+	left: 50px;
+	position: absolute;
+}
+h3.Redso{
+	font-size: 25px;
+	margin-left: 10%;
+	color: #4C0707;
+}
+#LogoF img{
+	height: 20px;
+	width: 20px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+#LogoT img{
+	height: 20px;
+	width: 20px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+#LogoI img{
+	height: 20px;
+	width: 20px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+#PanelP{
+	margin-top: 15px;
+	background: #B03A2E;
+	width: 100%;
+	text-align: center;
+	float: left;
+}
+#Idio{
+	background: #B03A2E;
+	top: 105%;
+	left: 89%;
+	position: absolute;
+	width: 10%;
+}
+#catalogo img{
+	margin-left: 100px;
+	margin-top: 7px;
+	position: relative;
+}
+.contenedor .catalogo{
+	list-style-type: none;
+}
+.flotante{
+    display:scroll;
+        position:fixed;
+        top: 4%;
+        right:0px;
+}
+.swiper-container {
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+	margin-top: 4%;
+    background-position: center;
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+}

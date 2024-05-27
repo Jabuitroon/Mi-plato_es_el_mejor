@@ -1,0 +1,86 @@
+body{
+	background: url(../Img/Fondo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.aside{
+	display: flex;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+}
+
+/* .section{
+	display: flex;
+} */
+
+.form-header{
+	font-weight: normal;
+	color: #E74C3C;
+	text-align: center;
+	padding: 14px 0;
+}
+
+.form{
+	background: rgba(0,0,0,0.5);
+	width: 90%;
+	max-width: 550px;
+	margin: auto;
+	padding: 5px 35px;
+	margin-top: 80px;
+	padding-bottom: 30px;
+	border-radius: 3px;
+	margin-left: 35%;
+}
+
+[placeholder]{
+	background: rgba(0,0,0,0.7);
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #E74C3C;
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #FFF;
+	font-family: Roboto;
+}
+
+[placeholder="Nombre"]{
+	border-bottom: 2px solid steelblue;
+}
+
+textarea{
+	resize: vertical;
+	height: 30px;
+	max-height: 135px;
+	min-height: 30px;
+}
+
+.btn-submit{
+	display: block;
+	margin-left: 10px;
+	width: 100%;
+	font-family: 'Great Vibes', cursive;
+	outline: none;
+	background: #E74C3C;
+	font-size: 25px;
+	border: none;
+	color: #fff;
+	padding: 15px 0;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+
+.btn-submit:hover {
+	background-color: #641E16;
+}
+
+#como-llegar > p{
+	font-size: 80px;
+	color: blueviolet;
+}
