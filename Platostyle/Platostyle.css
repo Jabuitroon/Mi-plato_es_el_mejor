@@ -1,154 +1,410 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
-*{
-	font-family: 'Handlee', cursive;
+:root {
+  --bgColor: #641e16;
+  --secondBgColor: #cb4335;
+  --darkColor: #4c0707;
+  --textColorLight: #e74c3c;
+  --thrBgColor: #ffccd5;
 }
 
-/*Imagen de fondo fija*/
-body{
-	background: url(../Img/Fondo.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+* {
+  font-family: 'Handlee', cursive;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 0px;
+  margin: 0px;
 }
 
-/*Tamaño y fondo color oscuro header*/
-.header{
-	display: flex;
-	flex-direction: column;
-	background-color: #641E16;
-	height: 225px;
+body {
+  min-height: 100dvh;
 }
 
-/*Tamaño logo principal color negro png*/
-.header_title{
-	display: flex;
-	align-items: center;
-}
-.header_title--logo{
-	position: absolute;
-	object-fit: contain;
-	margin-top: 2.5%;
-	width: 200px;
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
 }
 
-/*Tamaño y fondo color claro de titulo */
-.header_title--title{
-	margin-top: 2.5%;
-	padding-left: 200px;
-	width: 90%;
-	font-size: 6em;
-	border-top-right-radius: 60px;
-	border-bottom-right-radius: 60px;
-	font-family: 'Great Vibes', cursive;
-	font-weight: bold;
-	background: #E74C3C;
-	color: #4C0707;
+p {
+  text-wrap: pretty;
 }
 
-/*Boton flotante reserva*/
-.header_float{
-    /* display:scroll; */
-	position:fixed;
-	z-index: 50;
-	top: 15%;
-	right:0px;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/*Nav horizontal*/
-.container-fluid{
-	background-color: #b12718;
+a {
+  text-decoration: none;
+  color: var(--textColorLight);
+}
+
+body {
+  background: url(../Img/Fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--bgColor);
+}
+
+.header__navBar {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  height: 51px;
+  & ul {
+    display: flex;
+  }
 }
 
 /*Nav horizontal Botones*/
-.header_nav li{
-	font: 15px verdana, sans-serif;
-	color: black;
-	transition: background-color .3s;
-	padding: 5px;
+.nav__item {
+  display: inherit;
+  align-items: center;
+  font: 15px verdana, sans-serif;
+  color: black;
+  transition: background-color 0.3s;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 2px;
 }
 
-.header_nav li:hover{
-	background-color: #E74C3C;
+.nav__item:hover {
+  background-color: var(--textColorLight);
+  & a {
+    color: #1f2937;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inherit;
+  align-items: center;
+}
+
+.dropdown--language {
+  appearance: none; /* Oculta el estilo nativo */
+  background-color: var(--bgColor);
+  color: var(--textColorLight);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  width: 80px;
+  text-align: right;
+}
+
+.dropdown--language:focus {
+  outline: none;
+  border-color: var(--darkColor);
+}
+
+/*Tamaño logo principal color negro png*/
+.header__title {
+  display: flex;
+  align-items: center;
+}
+.header__title--logo {
+  position: absolute;
+  object-fit: contain;
+  z-index: 100;
+  margin-left: 15px;
+  width: 200px;
+}
+
+/*Tamaño y fondo color claro de titulo */
+.header_title--title {
+  text-align: center;
+  width: 100%;
+  font-size: 6em;
+  font-family: 'Great Vibes', cursive;
+  font-weight: bold;
+  background: var(--textColorLight);
+  color: var(--darkColor);
 }
 
 /* Main */
-.main{
-	display: flex;
+.main {
+  display: flex;
 }
 
 /* aside */
-.main_aside{
-	display: flex;
-	flex-direction: column;
-	background: #CB4335;
-	width: 200px;
+.main__aside {
+  display: flex;
+  flex-direction: column;
+  background: var(--secondBgColor);
+  width: 235px;
 }
 
 /*número telefonico*/
-.main_aside > h3{
-	text-align: center;
-	margin: 0%;
-	font-size: 25px;
-	color: #4C0707;
-	padding: 10px 5px;
+.main__aside h3 {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 25px;
+  color: var(--darkColor);
+  padding: 10px 5px;
+}
+
+.main__aside ul {
+  display: grid;
+  grid-template-rows: repeat(auto, 1fr);
+  background: var(--thrBgColor);
+  & a {
+    color: #1f2937;
+  }
 }
 
 /*Panel vertical izquiero-redessociales*/
-.aside_redes{
-	padding: 0%;
-	list-style: none;
-	display: flex;
-	flex-direction: column;
+.aside_redes {
+  padding: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.aside_redes>li{
-	display: flex;
-	align-items: center;
-	margin-left: 5px;
-	gap: 10px;
+.aside_redes > li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Al usar los iconos de Bt los estilos se personalizan tratandolo cono un font */
-.bi-twitter-x{
-font-size: 35px;
-height: 45px;
+.bi-twitter-x {
+  font-size: 35px;
+  height: 45px;
 }
 
-.redes-font{
-	margin: 0px;
-	font-size: 15px;
+.redes-font {
+  margin: 0px;
+  font-size: 15px;
 }
 
 /* visor */
-.Section{
-	margin-top: 10px;
-    display: flex;
-    width: 1080px;
-    height: 535px;
+.Section {
+  display: flex;
+  margin: 0px auto;
+  width: 1080px;
+  height: 535px;
 }
 
-section img{
-    width: 0px;
-    /* Debtro de la caja flexible tiene que ocupar el espacio que pueda */
-    flex-grow: 1;
-    object-fit: cover;
-    transition: .5s ease;
-    opacity: .8;
+section img {
+  width: 0px;
+  /* Debtro de la caja flexible tiene que ocupar el espacio que pueda */
+  flex-grow: 1;
+  object-fit: cover;
+  transition: 0.5s ease;
+  opacity: 0.8;
 }
 
-section img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
+section img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
 }
 
 /*Footer y derechos autor*/
-#PanelP{
-	background: #B03A2E;
-	width: 100%;
-	text-align: center;
-	float: left;
+
+.footer {
+  display: flex;
+  background-color: var(--secondBgColor); /* bg-base-200 */
+  color: var(--tw-text-opacity, #1f2937); /* text-base-content */
+  padding: 2.5rem; /* p-10 */
+}
+
+.comments {
+  display: flex;
+  border-radius: 0.5rem; /* rounded */
+  width: 100%;
+  background-color: var(--thrBgColor);
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  width: 300%;
+  height: 400px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  width: 33.333%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkColor);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0px 100px;
+  
+  & p{
+    font-size: 1.5rem;
+  }
+}
+
+.slide1 {
+  background-color: var(--thrBgColor);
+}
+.slide2 {
+  background-color: var(--thrBgColor);
+}
+.slide3 {
+  background-color: var(--thrBgColor);
+}
+
+/* Hide radio buttons but keep them accessible */
+.carousel-radio {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Navigation dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot-label {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* When the corresponding radio is checked, highlight the dot */
+#slide1:checked ~ .carousel-dots .dot-label[for='slide1'],
+#slide2:checked ~ .carousel-dots .dot-label[for='slide2'],
+#slide3:checked ~ .carousel-dots .dot-label[for='slide3'] {
+  background-color: var(--secondBgColor);
+}
+
+/* Slide positioning based on which radio is checked */
+#slide1:checked ~ .carousel {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .carousel {
+  transform: translateX(-33.333%);
+}
+
+#slide3:checked ~ .carousel {
+  transform: translateX(-66.666%);
+}
+
+/* Navigation arrows */
+.carousel-arrows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.arrow-prev {
+  left: 20px;
+}
+
+.arrow-next {
+  right: 20px;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 90%;
+  }
+
+  .carousel-slide {
+    & p{
+      font-size: 0.5rem;
+    }
+  }
+  .carousel {
+    height: 300px;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+/* Show only relevant arrows for each slide */
+#slide1:checked ~ .carousel-arrows #prev-1,
+#slide1:checked ~ .carousel-arrows #next-1,
+#slide2:checked ~ .carousel-arrows #prev-2,
+#slide2:checked ~ .carousel-arrows #next-2,
+#slide3:checked ~ .carousel-arrows #prev-3,
+#slide3:checked ~ .carousel-arrows #next-3 {
+  display: flex;
+}
+
+#slide1:checked ~ .carousel-arrows #prev-2,
+#slide1:checked ~ .carousel-arrows #prev-3,
+#slide1:checked ~ .carousel-arrows #next-2,
+#slide1:checked ~ .carousel-arrows #next-3,
+#slide2:checked ~ .carousel-arrows #prev-1,
+#slide2:checked ~ .carousel-arrows #prev-3,
+#slide2:checked ~ .carousel-arrows #next-1,
+#slide2:checked ~ .carousel-arrows #next-3,
+#slide3:checked ~ .carousel-arrows #prev-1,
+#slide3:checked ~ .carousel-arrows #prev-2,
+#slide3:checked ~ .carousel-arrows #next-1,
+#slide3:checked ~ .carousel-arrows #next-2 {
+  display: none;
+}
+
+#PanelP {
+  background: var(--textColorLight);
+  width: 100%;
+  text-align: center;
+  float: left;
 }
